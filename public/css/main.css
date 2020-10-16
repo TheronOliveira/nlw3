@@ -1,0 +1,24 @@
+/*seletor(body) propriedade(color)*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*# significa id*/
+body{
+    height: 100vh;
+    color: white;
+    background: #EBF2F5;
+}
+:root{
+    font-size: 62.5%;
+}
+
+body, input, button, textarea{
+    /*unidades de medidas:
+    em(busca o elemento anterior pai da tag aberta(no caso html))
+    rem(pega sempre a tag html*/
+    font: 400 1.8rem/1 "Nunito", sans-serif;
+}
