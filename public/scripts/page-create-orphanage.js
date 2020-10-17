@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 //create icon
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29,68]
 })
@@ -91,4 +91,15 @@ function toggleSelect(event){
     
     //verificar se sim ou não
     input.value = button.dataset.value
+}
+
+
+function validate(event){
+    //validar se o lat  e lng esta vazio
+    const needsLatAndLng = true
+    if(needsLatAndLng.value=''){
+        event.prevent.Default()
+        alert('Selecione um ponto no mapa')
+    }
+    
 }
